@@ -1,17 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 
 :root {
     --bg: #14bdac;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 5;
+    padding: 5;
     box-sizing: border-box;
 }
 
 html {
-    font-family: "Roboto Mono";
+    font-family: "Roboto";
 }
 
 body {
@@ -77,16 +78,20 @@ body.over .container .item {
 }
 
 .rematch {
+    letter-spacing: 2px;
     cursor: pointer;
     padding: 20px 50px;
     display: inline-block;
-    background-color: black;
     color: white;
     font-size: 24px;
     margin-bottom: 30px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    border-radius: 50px;
+        background: linear-gradient(145deg, #12aa9b, #15cab8);
+        box-shadow: 20px 20px 60px #11a192,
+            -20px -20px 60px #17d9c6;
 }
 
 body.over .rematch {
