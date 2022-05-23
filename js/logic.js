@@ -32,7 +32,7 @@ function init() {
 
       // check for draw
       if (tracking.length === 0) {
-        playerTitle.innerHTML = "You are Tuff, It's Draw";
+        playerTitle.innerHTML = "It's Draw";
         document.body.classList.add("over");
         console.log("Nothing Left");
         return;
