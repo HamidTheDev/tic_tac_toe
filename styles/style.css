@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+:root {
+    --bg: #858dff;
+}
+
+* {
+    margin: 15;
+    padding: 15;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto";
+}
+
+body{
+    min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 25vh;
+        background-color: var(--bg);
+}
+
+.playerTitle {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#rematch {
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 20px 50px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #787fe6, #8e97ff);
+        box-shadow: 5px 5px 10px #7178d9,
+            -5px -5px 10px #99a2ff;
+}
+
+
+.board {
+    width: 100vw;
+        height: 400px;
+        max-width: 600px;
+        background-color: none;
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        grid-gap: 10px;
+}
+
+.cell {
+    line-height: 140px;
+    text-align: center;
+    font-family: "Arial Narrow";
+    font-weight: bold;
+    font-size: 70px;
+
+        border-radius: 0px;
+            background: linear-gradient(145deg, #787fe6, #8e97ff);
+            box-shadow: 5px 5px 10px #7178d9,
+                -5px -5px 10px #99a2ff;
+    }
+
+
+.control {
+    font-family: "Arial Narrow";
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top:40px;
+}
+
+.level {
+
+    margin: 0 15px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.not-selected {
+    opacity: 0.5;
+}
+
+.not-selected:hover {
+    opacity:1;
+}
+
+.start {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+    opacity:0.5;
+
+    background: linear-gradient(145deg, #8e97ff, #787fe6);
+        box-shadow: 5px 5px 13px #5d63b3,
+            -5px -5px 13px #adb7ff;
+}
+
+.start:hover {
+    opacity:1;
+}
+
+.ingame {
+    display:none;
+    color:whitesmoke;
+}
+
+.ingame > p {
+    margin:0px;
+}
+
+.robot {
+    opacity:0.5;
+}

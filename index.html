@@ -1,29 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-</head>
-<body>
-    <section>
-  <h1 class="playerTitle">Tic Tac Toe</h1>
-  <a class="rematch">Wanna Rematch?</a>
-  <div class="container">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-  </div>
-</section>
-<script src="js/logic.js"></script>
-</body>
+<html>
+  <head>
+    <title>Hamid's Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <h1 class="playerTitle">Tic Tac Toe</h1>
+      <a id="rematch">Reset</a>
+
+      <div class="board">
+        <!-- data-indx following cell divs represents cell index in 1D array representation -->
+        <div class="cell" data-indx="0"></div>
+        <div class="cell" data-indx="1"></div>
+        <div class="cell" data-indx="2"></div>
+        <div class="cell" data-indx="3"></div>
+        <div class="cell" data-indx="4"></div>
+        <div class="cell" data-indx="5"></div>
+        <div class="cell" data-indx="6"></div>
+        <div class="cell" data-indx="7"></div>
+        <div class="cell" data-indx="8"></div>
+      </div>
+
+      <div class="control">
+        <!-- div.intial displays the starting controls -->
+        <div class="intial">
+          <div class="difficulty">
+            <span
+              style="
+                color: whitesmoke;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                  serif;
+              "
+              >Select Level:</span
+            >
+            <span class="level not-selected" id="blind">Noob</span>
+            <span class="level not-selected" id="novice">Pro</span>
+            <span class="level not-selected" id="master">Master!</span>
+          </div>
+
+          <div class="start">Start</div>
+        </div>
+
+        <!-- div.ingame displays in-game messages and controls -->
+        <div class="ingame" id="human">It's your turn ...</div>
+        <div class="ingame" id="ai">
+          <img src="imgs/robot.png" id="robot" class="robot" />
+          <p>Waint for it ...</p>
+        </div>
+        <div class="ingame" id="won">You won !</div>
+        <div class="ingame" id="lost">You lost !</div>
+        <div class="ingame" id="draw">It's a Draw</div>
+      </div>
+    </div>
+
+    <script src="scripts/jquery-1.10.1.min.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/ai.js"></script>
+    <script src="scripts/control.js"></script>
+  </body>
 </html>
