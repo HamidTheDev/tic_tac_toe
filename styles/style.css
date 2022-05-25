@@ -22,7 +22,6 @@ body{
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding-bottom: 25vh;
         background-color: var(--bg);
 }
 
