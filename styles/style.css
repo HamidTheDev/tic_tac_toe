@@ -71,10 +71,11 @@ body{
 
 .control {
     font-family: "Arial Narrow";
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     margin-top:40px;
+    margin-bottom:40px;
 }
 
 .level {
@@ -93,15 +94,15 @@ body{
 }
 
 .start {
-    margin-top: 20px;
-    width: 100px;
-    height: 100px;
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
 
-    line-height: 100px;
+    line-height: 200px;
     text-align: center;
-    border-radius: 50px;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
+    border-radius: 100px;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -142,5 +143,20 @@ body{
             margin-bottom: 20px;
            
         }
+
+                .start {
+                    margin-top: 20px;
+                    width: 100px;
+                    height: 100px;
+        
+                    line-height: 100px;
+                    text-align: center;
+                    border-radius: 50px;
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;}
+
+                                        .control {
+                                            font-family: "Arial Narrow";
+                                            font-size: 30px;}
 }
 
