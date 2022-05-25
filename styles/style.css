@@ -47,6 +47,7 @@ body{
 
 
 .board {
+        position:fixed;
     width: 85vw;
         height: 35vh;
         background-color: none;
