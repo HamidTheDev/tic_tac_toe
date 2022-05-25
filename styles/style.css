@@ -71,7 +71,7 @@ body{
 
 .control {
     font-family: "Arial Narrow";
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
     margin-top:50px;
@@ -131,6 +131,11 @@ body{
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    #rematch {
+        font-size: 26px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            padding: 15px 70px;}
 
     .board{
         width: 30vw;
@@ -147,15 +152,19 @@ body{
                     margin-top: 20px;
                     width: 100px;
                     height: 100px;
-        
                     line-height: 100px;
                     text-align: center;
                     border-radius: 50px;
                     -webkit-border-radius: 50px;
                     -moz-border-radius: 50px;}
 
-                                        .control {
-                                            font-family: "Arial Narrow";
-                                            font-size: 30px;}
+                          .control {
+                              font-family: "Arial Narrow";
+                              font-size: 40px;
+                              font-weight: bold;
+                              text-align: center;
+                              margin-top: 50px;
+                              margin-bottom: 50px;
+                          }
 }
 
