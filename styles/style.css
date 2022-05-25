@@ -47,8 +47,8 @@ body{
 
 
 .board {
-    width: 95vw;
-        height: 40vh;
+    width: 85vw;
+        height: 35vh;
         background-color: none;
         display: grid;
         grid-template: repeat(3, 1fr) / repeat(3, 1fr);
